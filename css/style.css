@@ -1,0 +1,143 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone100: hsl(30, 54%, 90%);
+    --stone150: hsl(30, 18%, 87%);
+    --stone600: hsl(30, 10%, 34%);
+    --stone900: hsl(24, 5%, 18%);    
+    --brown800: hsl(14, 45%, 36%);    
+    --rose800: hsl(332, 51%, 32%);
+    --rose50: hsl(330, 100%, 98%);
+    --primaryFont: "Outfit", sans-serif;
+    --secondaryFont: "Young Serif", serif;
+    --roseBackground: hsl(29, 51%, 90%);
+  }
+
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%; /* =10px */ 
+    font-family: var(--primaryFont);   
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  
+/* Globales */
+
+hr {
+  margin: 5rem 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;  
+}
+
+h1, h2 {
+  font-family: var(--secondaryFont);
+}
+
+h2 {
+  color: var(--brown800);
+}
+
+h3 {
+  color: var(--rose800);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.brown {
+  color: var(--brown800);
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  height: 100%;  
+  background-color: var(--roseBackground);
+}
+
+@media (min-width: 768px){
+  body {
+    margin: 10rem;
+  }
+}
+
+.container {   
+  width: 100vw;
+  border-radius: 1rem;
+  background-color: var(--white);
+}
+
+@media (min-width: 768px){
+  .container {
+    width: 60rem;
+    padding: 3rem; 
+  }
+
+  .header img {
+    border-radius: 1rem;
+  }
+}
+
+.recipe {
+  padding: 3rem;
+}
+
+@media (min-width: 768px){
+  .recipe {
+    padding: 0;
+  }
+}
+
+
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nutrition-table {
+  display: flex;
+  flex-direction: column;  
+  gap: 2rem;
+  margin: 2.5rem 0 0 0rem;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas */
+  gap: 5px 10px; /* Espacio entre filas y columnas */
+  border-bottom: 1px solid var(--stone150);
+  padding-bottom: 1rem;
+}
+
+.table-row:last-of-type {
+  border-bottom: none;
+}
+
+.nutrient {
+  text-align: left; 
+  padding-left: 3rem; 
+}
+
+.value {
+  text-align: left;  
+  color: #754734; /* Color marrón similar al de la imagen */
+}
+
