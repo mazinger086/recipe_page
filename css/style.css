@@ -38,6 +38,7 @@ img {
 
 h1, h2 {
   font-family: var(--secondaryFont);
+  font-weight: 400;
 }
 
 h2 {
@@ -47,6 +48,13 @@ h2 {
 h3 {
   color: var(--rose800);
 }
+
+
+.prep-time li, .ingredients li {
+  margin-bottom: 1.5rem;
+}
+
+
 
 .bold {
   font-weight: 700;
@@ -100,6 +108,26 @@ body {
   }
 }
 
+
+.prep-time {
+  margin: 5rem 0 6rem 0;
+}
+
+.prep-time ul {
+  padding-left: 2.5rem;
+}
+
+.prep-time ul li::marker {
+  color: var(--rose800);
+}
+
+.ingredients ul {
+  padding-left: 2rem;
+}
+
+.ingredients ul li::marker {
+  color: var(--brown800);
+}
 
 .table {
   display: flex;
